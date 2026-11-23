@@ -1,0 +1,376 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To My Sunflower 🌸</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Quicksand:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <audio id="backgroundMusic" loop>
+        <source src="audio/the_metro_proposal.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <div class="floating-hearts" id="floatingHearts"></div>
+    <main class="welcome-screen" id="welcomeScreen">
+
+        <div class="floating-heart heart-one">♡</div>
+        <div class="floating-heart heart-two">♥</div>
+        <div class="floating-heart heart-three">♥</div>
+        <div class="floating-heart heart-four">♡</div>
+        <div class="floating-heart heart-five">♥</div>
+        <div class="floating-heart heart-four">♡</div>
+        <div class="floating-heart heart-six">♥</div>
+        <div class="floating-heart heart-seven">♡</div>
+
+        <p class="top-note">A little something made with love</p>
+
+        <h1>Hey, Sunflower! 🌷</h1>
+
+        <p class="subtitle">
+            Someone has a little surprise waiting for you...
+        </p>
+
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope">
+                <div class="envelope-back"></div>
+                <div class="letter">
+                    <span>To my favourite human</span>
+                    <span class="letter-heart">♡</span>
+                </div>
+                <div class="envelope-front"></div>
+                <div class="envelope-flap"></div>
+                <div class="envelope-seal">♥</div>
+            </div>
+        </div>
+
+        <button id="openButton" class="open-button">
+            Open your little surprise ♡
+        </button>
+
+        <p class="bottom-note">Made with endless love, just for you</p>
+
+    </main>
+
+    <section class="letter-screen" id="letterScreen">
+        <div class="letter-content">
+            <p class="letter-date">A little letter for you 🌸</p>
+            <h2>Dear Sunflower,</h2>
+            <p>
+                If someone had told me on our first day of college
+                that a person with an adjacent batch number would
+                become this important to me, I probably wouldn't
+                have believed them.
+            </p>
+            <p>
+                But here we are, four years, countless memories
+                and a million little moments later.
+            </p>
+            <p class="handwritten">
+                And this little corner of the internet is all yours. ♡
+            </p>
+            <button class="continue-button" id="continueButton">
+                Let's take a trip down memory lane →
+            </button>
+        </div>
+    </section>
+    <!-- CHAPTER 02: OUR COLLEGE MEMORIES -->
+    <section class="memories-section" id="memoriesSection">
+        <div class="memory-heading">                <p class="chapter-label">CHAPTER 02 · OUR LITTLE UNIVERSE</p>
+            <h2>Four Years,<br>
+                <span>A Million Memories.</span>
+            </h2>
+            <p class="memory-intro">
+                From two adjacent batch numbers to being
+                each other's favourite notification. ♡
+            </p>
+            <div class="little-flower">✿</div>
+        </div>
+
+        <div class="memory-grid">
+            <button class="memory-card pink-card"
+                data-title="CTRL + C"
+                data-message="Who knew two simple keyboard shortcuts would become part of our friendship language? From copying codes to copying each other's chaos, CTRL + C will always remind me of us. 😂"
+                data-caption="Our unofficial language">
+                <span class="card-number">01</span>
+                <span class="card-icon">⌨️</span>
+                <h3>CTRL + C</h3>
+                <p>Our unofficial language</p>
+                <span class="click-note">Click to open ♡</span>
+            </button>
+            <button class="memory-card cream-card"
+                data-title="Important Questions"
+                data-message="The most important questions before exams, the last-minute discussions and the little academic survival plans. We might not have had all the answers, but we definitely had each other! 📚"
+                data-caption="Academic survival partners">
+                <span class="card-number">02</span>
+                    <span class="card-icon">📚</span>
+                    <h3>Important Questions</h3>
+                    <p>Our academic survival kit</p>
+                    <span class="click-note">Click to open ♡</span>
+                </button>
+
+                <button class="memory-card cream-card"
+                    data-title="Paneer Puffs"
+                    data-message="Paneer puffs, little breaks between classes and conversations that somehow lasted longer than our actual lunch breaks. Those simple days were something else."
+                    data-caption="The beginning of our food adventures">
+                    <span class="card-number">03</span>
+                    <span class="card-icon">🥐</span>
+                    <h3>Paneer Puffs</h3>
+                    <p>The OG favourite</p>
+                    <span class="click-note">Click to open ♡</span>
+                </button>
+
+                <button class="memory-card pink-card"
+                    data-title="Mushroom Puffs"
+                    data-message="Four years later, the food choices evolved! From wasting paneer from the puffs to mushroom puffs, apparently we had character development too. But one thing never changed — having you beside me. 🍄"
+                    data-caption="Our friendship's character development">
+                    <span class="card-number">04</span>
+                    <span class="card-icon">🍄</span>
+                    <h3>Mushroom Puffs</h3>
+                    <p>The upgraded era</p>
+                    <span class="click-note">Click to open ♡</span>
+                </button>
+            </div>
+
+            <p class="memories-footer">
+                And these are just four of a million little things... ♡
+            </p>
+            <div class="memory-modal" id="memoryModal">
+                <div class="modal-content">
+                    <button class="close-modal" id="closeModal">×</button>
+                    <span class="modal-decoration">♡ ✿ ♡</span>
+                    <p class="chapter-label">A LITTLE MEMORY</p>
+                    <h2 id="modalTitle">Memory title</h2>
+                    <p class="modal-caption" id="modalCaption"></p>
+                    <p class="modal-message" id="modalMessage"></p>
+                    <span class="modal-footer">Forever one of my favourites ♡</span>
+                </div>
+            </div>
+            <div class="gallery-next">
+                <p>And guess what? I saved a few more memories...</p>
+
+                <button class="continue-button" id="memoriesContinueButton">
+                    There's little surprise for you →
+                </button>
+            </div>
+        </section>
+        <!-- CHAPTER 03: OUR PHOTO & VIDEO GALLERY -->
+        <section class="gallery-section" id="gallerySection">
+            <div class="gallery-heading">
+                <p class="chapter-label">CHAPTER 03 · THE CAMERA ROLL</p>
+                <h2>The Pretty, The Ugly<br>
+                    <span>& The Unforgettable.</span>
+                </h2>
+                <p class="gallery-intro">
+                    Every version of you is my favourite version. ♡
+                </p>
+            </div>
+            <!-- Photo category filters -->
+            <div class="gallery-filters">
+                <button class="filter-button active" data-filter="all">All memories ♡</button>
+                <button class="filter-button" data-filter="college">College</button>
+                <button class="filter-button" data-filter="selfies">Selfies</button>
+                <button class="filter-button" data-filter="chaos">Chaos</button>
+                <button class="filter-button" data-filter="food">Food</button>
+            </div>
+            <!-- Photo gallery -->
+            <div class="photo-grid">
+                                <!-- SELFIES -->
+                <button class="photo-card" data-category="selfies">
+                    <img src="Photos/sri heart filter.jpeg" alt="Our selfie">
+                    <span>Just us being us ♡</span>
+                </button>
+
+                <!-- FOOD -->
+                <button class="photo-card" data-category="food">
+                    <img src="Photos/puff.jpeg" alt="Our food memory">
+                    <span>Your puff obsession 😂</span>
+                </button>
+
+                <!-- COLLEGE -->
+                <button class="photo-card" data-category="college">
+                    <img src="Photos/padips.jpeg" alt="College memory">
+                    <span>Your college diaries 🎓</span>
+                </button>
+
+                <button class="photo-card" data-category="pretty">
+                    <img src="Photos/ilink2.jpeg" alt="A favourite picture">
+                    <span>Pretty little moments ♡</span>
+                </button>
+                <button class="photo-card" data-category="pretty">
+                    <img src="Photos/last day.jpeg" alt="A lovely memory">
+                    <span>Our pretty era 🌷</span>
+                </button>
+                <button class="photo-card" data-category="chaos">
+                    <img src="Photos/dog filter.jpeg" alt="A funny picture">
+                    <span>What even is this face 😂</span>
+                </button>
+                <button class="photo-card" data-category="chaos">
+                    <img src="Photos/cafe.jpeg" alt="An embarrassing memory">
+                    <span>Evidence of our madness</span>
+                </button>
+                <button class="photo-card" data-category="college">
+                    <img src="Photos/iv day 2dress.jpeg" alt="College memory">
+                    <span>Back in our college days 🎓</span>
+                </button>
+                <button class="photo-card" data-category="college">
+                    <img src="Photos/ilink.jpeg" alt="Another college memory">
+                    <span>Those were the days ♡</span>
+                </button>
+            </div>
+            <!-- Enlarged photo preview -->
+            <div class="photo-modal" id="photoModal">
+                <button class="photo-modal-close" id="closePhotoModal">×</button>
+                <img id="expandedPhoto" src="" alt="Expanded memory">
+            </div>
+            <!-- Video memories -->
+            <div class="video-heading">
+                <p class="chapter-label">BONUS · LIVE FROM OUR CAMERA ROLL</p>
+                <h2>Memories in Motion 🎬</h2>
+                <p>Because some memories deserve to move, not just sit in a frame.</p>
+            </div>
+            <div class="video-grid">
+                <div class="video-card">
+                    <video controls preload="metadata">
+                        <source src="Videos/iv.mp4" type="video/mp4">
+                        Your browser does not support video playback.
+                    </video>
+                    <p>Two perfectly normal humans. Obviously. 😂</p>
+                </div>
+            </div>
+            <div class="gallery-next">
+                <p>And guess what? There's still some more surprise...</p>
+
+                <button class="continue-button" id="galleryContinueButton">
+                    One last little surprise for you →
+                </button>
+            </div>
+        </section>
+
+        <!-- CHAPTER 04 - PERSONAL LETTER -->
+        <section class="letter-chapter" id="letterChapter">
+
+            <div class="letter-chapter-content">
+
+                <p class="chapter-label">
+                    CHAPTER 04 · A LITTLE SOMETHING FROM ME
+                </p>
+
+                <div class="heart-decoration">♡</div>
+
+                <h2>A Letter From My Heart
+                    To My Fav person
+                </h2>
+
+                <div class="personal-letter">
+                    <p class="letter-greeting">Dear Sri💗,</p>
+
+                    <p>
+                        Four years of friendship, countless memories,
+                        silly conversations and moments I'll always
+                        carry with me.
+                    </p>
+
+                    <p>
+                        From our first day of college to all our
+                        little adventures, I'm so grateful that
+                        life brought us together.
+                    </p>
+
+                    <p>
+                        Even though life has taken us to different
+                        places, you'll always have someone cheering
+                        for you, supporting you and listening to
+                        all your stories.
+                    </p>
+
+                    <p>
+                        Never forget that I'm always there for youhh.
+                        No matter how far life takes us.
+                    </p>
+
+                    <p class="letter-love">
+                        Love you more than Karthick
+                        (dont tell him that i said this😂 or else i'll end up in grave🪦). ♡
+                    </p>
+
+                    <p class="letter-signature">
+                        Forever your partner in chaos,
+                        <br>
+                        Your Chowmi...
+                    </p>
+                </div>
+
+                <button class="continue-button" id="letterContinueButton">
+                    I have one final surprise for you →
+                </button>
+            </div>
+        </section>
+
+
+<!-- CHAPTER 05 - THE FINAL BIRTHDAY SURPRISE -->
+        <section class="birthday-finale" id="birthdayFinale">
+            <div class="confetti-container" id="confettiContainer"></div>
+            <div class="finale-content">
+                <p class="chapter-label">CHAPTER 05 · MADE WITH LOTS OF LOVE</p>
+                <h2>One Last Little Surprise...</h2>
+                <p class="finale-intro">
+                    Before you go, make a wish, birthday girl! ♡
+                </p>
+                <!-- Birthday Cake -->
+                <div class="cake-container" id="cakeContainer">
+                    <div class="cake">
+                        <div class="candle candle-one">
+                            <div class="flame"></div>
+                            <div class="smoke"></div>
+                        </div>
+                        <div class="candle candle-two">
+                            <div class="flame"></div>
+                            <div class="smoke"></div>
+                        </div>
+                        <div class="candle candle-three">
+                            <div class="flame"></div>
+                            <div class="smoke"></div>
+                        </div>
+                        <div class="cake-top"></div>
+                        <div class="cake-middle"></div>
+                        <div class="cake-bottom"></div>
+                        <div class="cake-plate"></div>
+                    </div>
+                </div>
+                <div class="countdown" id="countdown"></div>
+                <button class="continue-button" id="startCakeButton">
+                    Let's make a wish! 🎂
+                </button>
+                <!-- Final birthday message -->
+                <div class="final-birthday-message" id="finalBirthdayMessage">
+
+                    <h1>Happy Birthday, Sri! 💗</h1>
+
+                    <p class="birthday-wish">
+                        May your life be filled with happiness, laughter,
+                        beautiful surprises and everything your heart wishes for.
+                    </p>
+
+                    <p class="birthday-wish">
+                        No matter where life takes us, you'll always have me
+                        cheering for you.And Remember, I'm always there for youhh!
+                    </p>
+
+                    <p class="final-love">
+                        Love you endlessly, my Sunflower. ♡
+                    </p>
+
+                    <p class="final-signature">
+                        Forever your partner in chaos 🌷
+                    </p>
+                </div>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
